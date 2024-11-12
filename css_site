@@ -1,0 +1,126 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;  /* Fonte escolhida */
+    background-color: #f4f9f4;
+    color: #2c6e49;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #388e3c;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 15px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f0c14b;
+}
+
+main {
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: #388e3c;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Ajuste para responsividade */
+    gap: 30px;
+    justify-items: center;
+}
+
+.video {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.video:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.descricao {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.video:hover .descricao {
+    color: #388e3c;
+}
+
+footer {
+    background-color: #388e3c;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
