@@ -1,0 +1,144 @@
+/* Resetando estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f9f4;
+  color: #2c6e49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #388e3c;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 15px 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f0c14b;
+}
+
+main {
+  padding: 40px 20px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 2.8rem;
+  color: #388e3c;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.perfil-container {
+  margin-top: 50px;
+}
+
+.entrevistado {
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entrevistado:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.entrevistado img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px; /* Torna as bordas da imagem arredondadas */
+  margin-bottom: 15px; /* Espaço entre a imagem e o nome */
+}
+
+.entrevistado h3 {
+  font-size: 1.8rem;
+  color: #388e3c;
+  margin-bottom: 20px; /* Espaço entre o nome e a biografia */
+  font-weight: 700;
+  text-align: center; /* Centraliza o nome */
+}
+
+/* Estilo para a biografia dos entrevistados */
+.biografia {
+  font-family: "Georgia", serif; /* Fonte serifada elegante */
+  font-size: 1.25rem; /* Aumenta o tamanho da fonte para torná-la mais legível */
+  color: #333; /* Cor de texto mais suave (cinza escuro) */
+  line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+  margin-top: 20px; /* Espaçamento superior maior */
+  text-align: center; /* Centraliza o texto */
+  letter-spacing: 0.5px; /* Aumenta ligeiramente o espaçamento entre as letras */
+  font-style: italic; /* Deixa o texto levemente em itálico para um toque elegante */
+  padding: 0 20px; /* Adiciona um pouco de espaçamento interno lateral */
+  max-width: 800px; /* Limita a largura da biografia para melhor leitura */
+  margin-left: auto;
+  margin-right: auto; /* Centraliza o bloco de texto */
+}
+
+/* Adiciona um efeito de sombra suave no texto */
+.biografia:hover {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o texto ao passar o mouse */
+}
+.botao {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,220 @@
+/* Reset de estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e8f5e9; /* Fundo verde claro */
+  color: #2c6e49; /* Texto verde escuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #388e3c; /* Verde forte */
+  color: white;
+  width: 100%;
+  padding: 30px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+  border-bottom: 3px solid #2c6e49; /* Linha de borda verde mais escura */
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Distância entre letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto suave */
+}
+
+/* Navegação */
+header nav ul {
+  list-style-type: none;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+header nav ul li a:hover {
+  background-color: #f0c14b; /* Cor dourada para hover */
+  color: #388e3c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ao passar o mouse */
+}
+
+/* Estilo principal da página */
+main {
+  padding: 50px 10%;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* Títulos das seções */
+h2 {
+  font-size: 2.8rem;
+  color: #388e3c;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Aumenta a legibilidade */
+}
+
+/* Container das entrevistas */
+.entrevistas-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Descrição introdutória */
+.entrevistas-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.8;
+  font-weight: 300; /* Menor peso de fonte para a descrição */
+}
+
+/* Lista de vídeos das entrevistas */
+.entrevistas-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Layout responsivo */
+  gap: 30px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Estilo de cada vídeo */
+.entrevista {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.entrevista:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Efeito mais forte no hover */
+}
+
+/* Estilo do vídeo */
+.entrevista video {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover; /* Ajusta o vídeo para preencher o container */
+}
+
+/* Descrição de cada entrevista */
+.descricao {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.entrevista:hover .descricao {
+  color: #388e3c; /* Muda a cor da descrição no hover */
+  font-weight: 600; /* Aumenta o peso da fonte ao passar o mouse */
+}
+
+/* Botão de voltar */
+button.voltar {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+button.voltar:hover {
+  background-color: #2c6e49;
+}
+
+/* Footer */
+footer {
+  background-color: #388e3c;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.1rem;
+  border-top: 3px solid #2c6e49; /* Linha verde para separar o footer */
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Estilo de links */
+a {
+  color: #388e3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f0c14b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 5%;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .entrevista {
+    max-width: 300px; /* Ajuste do tamanho para telas menores */
+  }
+
+  .entrevistas-container h2 {
+    font-size: 2rem;
+  }
+
+  header nav ul li {
+    margin-right: 15px;
+  }
+
+  header nav ul li a {
+    font-size: 1.1rem;
+  }
+}

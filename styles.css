@@ -1,0 +1,196 @@
+/* Resetando estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e8f5e9; /* Fundo verde suave */
+  color: #2c6e49; /* Texto verde escuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #388e3c; /* Verde forte */
+  color: white;
+  width: 100%;
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Navegação */
+header nav ul {
+  list-style-type: none;
+  padding: 15px 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f0c14b; /* Cor dourada para o hover */
+}
+
+/* Conteúdo principal */
+main {
+  padding: 50px 10%;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Títulos das seções */
+h2 {
+  font-size: 2.8rem;
+  color: #388e3c;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Seção de Entrevistados */
+.entrevistados {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsivo */
+  gap: 40px;
+  justify-items: center;
+}
+
+.entrevistado {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entrevistado:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.entrevistado img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.entrevistado h3 {
+  font-size: 1.8rem;
+  color: #388e3c;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+/* Estilo para a biografia dos entrevistados */
+/* Estilo para a biografia dos entrevistados */
+.biografia {
+  font-family: "Georgia", serif; /* Fonte serifada elegante */
+  font-size: 1.25rem; /* Aumenta o tamanho da fonte para torná-la mais legível */
+  color: #333; /* Cor de texto mais suave (cinza escuro) */
+  line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+  margin-top: 20px; /* Espaçamento superior maior */
+  text-align: center; /* Centraliza o texto */
+  letter-spacing: 0.5px; /* Aumenta ligeiramente o espaçamento entre as letras */
+  font-style: italic; /* Deixa o texto levemente em itálico para um toque elegante */
+  padding: 0 20px; /* Adiciona um pouco de espaçamento interno lateral */
+}
+
+/* Adiciona um efeito de sombra suave no texto */
+.biografia:hover {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o texto ao passar o mouse */
+}
+
+/* Página de Entrevista - Estilo do vídeo */
+.entrevista-container {
+  padding: 40px 20px;
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.entrevista-container video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.descricao {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #388e3c;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+/* Botão de voltar */
+button.voltar {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button.voltar:hover {
+  background-color: #2c6e49;
+}
+
+/* Estilo de links */
+a {
+  color: #388e3c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f0c14b;
+}
